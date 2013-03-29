@@ -1,0 +1,19 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AbsVpiTheme" parent="android:Theme.Holo">
+        <item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+    </style>
+
+    <style name="CustomTitlePageIndicator">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="footerIndicatorStyle">underline</item>
+        <item name="footerIndicatorHeight">2dp</item>
+        <item name="selectedBold">true</item>
+        <item name="footerColor">@*android:color/holo_blue_light</item>
+    </style>
+
+</resources>

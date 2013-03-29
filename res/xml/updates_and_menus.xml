@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/eos_ota_menus" >
+
+    <PreferenceCategory
+        android:key="eos_ota_sprint"
+        android:title="@string/eos_ota_sprint" >
+        <Preference
+            android:key="eos_sprint_sprint_updates"
+            android:summary="@string/eos_sprint_sprint_update_summary"
+            android:title="@string/eos_sprint_sprint_updates" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.samsung.sdm.ui.SprintUpdateSetting"
+                android:targetPackage="com.samsung.sdm" />
+        </Preference>
+        <Preference
+            android:key="eos_sprint_provision"
+            android:summary="@string/eos_sprint_provision_summary"
+            android:title="@string/eos_sprint_provision" >
+            <intent
+                android:action="com.android.phone.PERFORM_CDMA_PROVISIONING"
+                android:targetClass="com.samsung.sdm.ui.HandsFreeActivation"
+                android:targetPackage="com.samsung.sdm" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="eos_menus_sprint"
+        android:title="@string/eos_sprint_menus" >
+        <Preference
+            android:key="eos_sprint_data"
+            android:summary="@string/eos_sprint_data_summary"
+            android:title="@string/eos_sprint_data" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.hiddenmenu.hdata_edit"
+                android:targetPackage="com.android.hiddenmenu" />
+        </Preference>
+        <Preference
+            android:key="eos_sprint_debug"
+            android:summary="@string/eos_sprint_debug_summary"
+            android:title="@string/eos_sprint_debug" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.hiddenmenu.DEBUG"
+                android:targetPackage="com.android.hiddenmenu" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

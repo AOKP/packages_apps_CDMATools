@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_device_settings">CDMATools</string>
+    <string name="eos_sprint_telephony">CDMATools</string>
+    <string name="eos_ota_menus">MENUS</string>
+    <string name="eos_ota_sprint">Sprint Updates</string>
+    <string name="eos_ota_verizon">Verizon Updates</string>
+    <string name="eos_diag">ADVANCED</string>
+    <string name="eos_sprint_menus">Sprint Hidden Menus</string>
+    <string name="eos_verizon_menus">Verizon Hidden Menus</string>
+    <string name="eos_advanced_menus">Advanced Menus</string>
+    <string name="diagnostics">Diagnostics</string>
+    <string name="eos_sprint_sprint_update_summary">Update your PRL and Profile</string>
+    <string name="eos_sprint_sprint_updates">Sprint Updates</string>
+    <string name="eos_sprint_debug_summary">Access advanced debugging menu. The access code is 777468, which is hard coded by the OEM and is not a security issue.</string>
+    <string name="eos_sprint_debug">Debug Menu</string>
+    <string name="eos_sprint_data_summary">View and edit data profile.</string>
+    <string name="eos_sprint_data">Data Menu</string>
+    <string name="eos_sprint_write_prl_summary">You must have a prl file named test.prl in the root of your sdcard</string>
+    <string name="eos_sprint_write_prl">Write PRL</string>
+    <string name="eos_sprint_rtn">RTN Menu</string>
+    <string name="eos_sprint_rtn_summary">This menu displays lifetime statistics of your device. It also provides an opportunity to reset.</string>
+    <string name="eos_sprint_diag_summary">Allows for advanced device diagnostics using the appropriate software.</string>
+    <string name="eos_sprint_diag">USB Diagnostics Mode</string>
+    <string name="eos_sprint_provision_summary">Start Hands-Free activation. This will also write the default network PRL to your device.</string>
+    <string name="eos_sprint_provision">Provision Device</string>
+    <string name="eos_sprint_acct_edit_summary">Edit DM Account</string>
+    <string name="eos_sprint_acct_edit">DM Account</string>
+    <string name="provision_title">Hands Free Activation</string>
+    <string name="provision_message">This will initiate the Handsfree Activation process and automatically reboot your phone.</string>
+    <string name="msl_screen">MSL Options</string>
+    <string name="msl_acquire_summary">Tap to acquire your MSL code</string>
+    <string name="msl_acquire">Get MSL Code!</string>
+    <string name="eos_sprint_msl_menu_summary">Master Subsidy Lock code allows for access to advanced radio diagnostics</string>
+    <string name="eos_sprint_msl_menu">MSL Menu</string>
+    <string name="msl_code_prefix">Your MSL code is</string>
+    <string name="hidden_menu">com.android.hiddenmenu</string>
+    <string name="msl_checker">com.android.hiddenmenu.MSL_option</string>
+    <string name="msl_continue">Continue</string>
+    <string name="msl_cancel">Cancel</string>
+    <string name="msl_action">org.teameos.telephony.msl</string>
+    <string name="msl_key">msl_key</string>
+    <string name="msl_activity">MSL_check</string>
+    <string name="toggle_diag">DIAG Test</string>
+    <string name="prl_management">ROAMING</string>
+    <string name="prl_manager">PRL Manager</string>
+    <string name="old_school_prl_write">Old School</string>
+    <string name="write_prl_summary">Flash a loaded PRL</string>
+    <string name="write_prl_title">Write PRL</string>
+    <string name="current_folder_name">Current folder: </string>
+    <string name="current_folder_button_label">Select current folder</string>
+    <string name="up_button_label">Up</string>
+    <string name="select_prl">Select a PRL</string>
+    <string name="set_prl_dir_summary">Set stored PRL folder location</string>
+    <string name="set_prl_dir_title">Set PRL folder</string>
+    <string name="radio_restarting_title">Restarting radio...</string>
+    <string name="write_success">written successfully</string>
+
+</resources>

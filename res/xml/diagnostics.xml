@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/eos_sprint_telephony" >
+
+    <PreferenceCategory
+        android:key="eos_diag"
+        android:title="@string/diagnostics" >
+        <org.teameos.settings.device.MslPreference
+            android:key="msl_acquire"
+            android:summary="@string/msl_acquire_summary"
+            android:title="@string/msl_acquire" >
+        </org.teameos.settings.device.MslPreference>
+
+        <org.teameos.settings.device.DiagnosticModePreference
+            android:key="eos_sprint_diag"
+            android:summary="@string/eos_sprint_diag_summary"
+            android:title="@string/eos_sprint_diag" >
+        </org.teameos.settings.device.DiagnosticModePreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="eos_advanced_menus"
+        android:title="@string/eos_advanced_menus" >
+        <Preference
+            android:key="eos_sprint_rtn"
+            android:summary="@string/eos_sprint_rtn_summary"
+            android:title="@string/eos_sprint_rtn" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.hiddenmenu.RTN"
+                android:targetPackage="com.android.hiddenmenu" />
+        </Preference>
+        <Preference
+            android:key="eos_sprint_acct_edit"
+            android:summary="@string/eos_sprint_acct_edit_summary"
+            android:title="@string/eos_sprint_acct_edit" >
+            <intent
+                android:action="com.samsung.syncservice.DMTOOL"
+                android:targetClass="com.samsung.syncservice.dm.hiddenmenu.AccountEdit"
+                android:targetPackage="com.samsung.syncservice" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

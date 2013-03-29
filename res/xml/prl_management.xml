@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/eos_sprint_telephony" >
+
+    <PreferenceCategory
+        android:key="prl_management"
+        android:title="@string/prl_manager" >
+        <org.teameos.settings.device.PrlSetDirectoryPreference
+            android:key="set_prl_dir"
+            android:summary="@string/set_prl_dir_summary"
+            android:title="@string/set_prl_dir_title" >
+        </org.teameos.settings.device.PrlSetDirectoryPreference>
+        <org.teameos.settings.device.PrlWriterPreference
+            android:key="write_prl"
+            android:summary="@string/write_prl_summary"
+            android:title="@string/write_prl_title" >
+        </org.teameos.settings.device.PrlWriterPreference>
+        <Preference
+            android:key="eos_sprint_write_prl"
+            android:summary="@string/eos_sprint_write_prl_summary"
+            android:title="@string/old_school_prl_write" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.hiddenmenu.Prl_Write"
+                android:targetPackage="com.android.hiddenmenu" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
